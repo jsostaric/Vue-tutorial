@@ -12,24 +12,25 @@
   </head>
   <body>
   <div id="app">
-    <h1 v-if="viewed">I can see this page<h1>
-    <h1 v-else>I can NOT see this page</h1>
-  </div>
+    <h1 :title="title">{{message}}<h1>
+    <img :src="url" :alt="title" :title="title" />
+</div>
 
    
     <!-- development version, includes helpful console warnings -->
-  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
-  <script>
-  var app = new Vue({
-      el: "#app",
-      data: {
-          message: "This is new message",
-          viewed: true
-      }
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+<script>
+var app = new Vue({
+    el: "#app",
+    data: {
+        message: "This is new message",
+        title: "You loaded page on" + " " + new Date(),
+        url: "http://vuejs.org/images/logo.png"
+    }
 
-  })
+})
 
-  </script>
+</script>
 
   </body>
 </html>

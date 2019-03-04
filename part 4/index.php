@@ -12,24 +12,30 @@
   </head>
   <body>
   <div id="app">
-    <h1 v-if="viewed">I can see this page<h1>
-    <h1 v-else>I can NOT see this page</h1>
-  </div>
+    <h1>{{message}}<h1>
+    <ul>
+      <li style="list-style-type:none;" v-for="todo in todos">{{todo.id}}. {{todo.text}}</li>
+    </ul>
+</div>
 
    
     <!-- development version, includes helpful console warnings -->
-  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
-  <script>
-  var app = new Vue({
-      el: "#app",
-      data: {
-          message: "This is new message",
-          viewed: true
-      }
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+<script>
+var app = new Vue({
+    el: "#app",
+    data: {
+        message: "Hello, Vue World!",
+        todos: [
+          {id:1, text:"Learn Vue"},
+          {id:2, text: "Like video"},
+          {id:3, text: "Subscribe to ..."}
+        ]
+    }
 
-  })
+})
 
-  </script>
+</script>
 
   </body>
 </html>
