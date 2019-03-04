@@ -12,7 +12,9 @@
   </head>
   <body>
   <div id="app">
-    <h1 v-text="message"><h1>
+    <h1>{{message}}<h1>
+    <input type="text" v-model="message" />
+    <button class="btn btn-primary"></button>
 </div>
 
    
@@ -22,7 +24,8 @@
 var app = new Vue({
     el: "#app",
     data: {
-        message: "This is new message"
+        message: "This is new message",
+
     }
 
 })
