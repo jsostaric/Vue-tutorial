@@ -1,0 +1,72 @@
+
+Skip to content
+
+Pull requests
+Issues
+Marketplace
+Explore
+
+@jsostaric
+
+18
+157
+
+126
+
+DevMarketer/VueJS_Tutorial
+Code
+Issues 0
+Pull requests 0
+Projects 0
+Wiki
+Insights
+VueJS_Tutorial/part10/styles.css
+@jacurtis jacurtis Part 10 dc18fb0 on 21 Nov 2016
+33 lines (28 sloc) 615 Bytes
+#app {
+height: 100vh;
+width: 100vw;
+background-color: red;
+background: url("https://source.unsplash.com/category/nature/1920x1080") no-repeat center center fixed;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}
+
+#submit-form {
+margin-top: 40px;
+}
+
+.lead-form {
+background-color: rgba(255, 255, 255, 0.6);
+border-radius: 5px;
+padding: 10px 50px 30px 50px;
+margin-top: 100px;
+}
+
+span.city-span {
+color: (#444);
+text-transform: uppercase;
+margin-left: 5px;
+margin-top: 10px;
+}
+
+.form-control {
+margin-bottom: 3px;
+}
+
+© 2019 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Help
+
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
+
